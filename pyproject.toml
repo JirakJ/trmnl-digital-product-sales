@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trmnl-digital-product-sales"
+version = "0.1.0"
+description = "New licenses, renewals and refunds from CSV"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = ["tzdata==2026.4"]
+
+[project.scripts]
+trmnl-digital-product-sales = "trmnl_digital_product_sales.__main__:main"
+
+[project.urls]
+Repository = "https://github.com/JirakJ/trmnl-digital-product-sales"
+Issues = "https://github.com/JirakJ/trmnl-digital-product-sales/issues"
+
+[tool.setuptools.packages.find]
+include = ["trmnl_digital_product_sales*"]

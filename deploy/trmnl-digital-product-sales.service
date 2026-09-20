@@ -1,0 +1,16 @@
+[Unit]
+Description=Update Digital Product Sales on TRMNL
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=trmnl
+WorkingDirectory=/opt/trmnl-digital-product-sales
+EnvironmentFile=/opt/trmnl-digital-product-sales/private/collector.env
+ExecStart=/opt/trmnl-digital-product-sales/.venv/bin/python -m trmnl_digital_product_sales --config private/config.json --push
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=/opt/trmnl-digital-product-sales/private
