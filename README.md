@@ -4,7 +4,7 @@ New licenses, renewals and refunds from CSV. A standalone, MIT-licensed TRMNL pl
 local Python collector. This repository contains everything needed to run it;
 no other plugin repository or developer-operated service is required.
 
-[Download](https://github.com/JirakJ/trmnl-digital-product-sales/releases/latest) · [Configuration](docs/CONFIGURATION.md) · [Scheduling](docs/RUNNING.md)
+[Download](https://github.com/JirakJ/trmnl-digital-product-sales/releases/latest) · [Configuration](docs/CONFIGURATION.md) · [Scheduling](docs/RUNNING.md) · [Shared-screen layouts](docs/MASHUPS.md)
 
 ![Synthetic demo](docs/preview.png)
 
@@ -42,6 +42,12 @@ The installed command `trmnl-digital-product-sales` accepts the same options. Wi
 local JSON is printed. `--demo` uses synthetic data and cannot be pushed. Normal
 source failures preserve the previous screen; always check its update timestamp.
 
+
+## Share the screen with other plugins
+
+Use Digital Product Sales in a half-screen or quarter-screen [TRMNL Mashup](docs/MASHUPS.md).
+The quarter view shows monetary net sales for the selected month and currency, plus the first product row. It does not show the aggregate new-license count as the headline. Use a vertical half or full screen for the separate license metrics and more product rows.
+The guide includes compatible layouts, suggested companion plugins and account setup.
 
 ## Development and verification
 
